@@ -39,13 +39,22 @@ public class Calculadora {
                     
                     JOptionPane.showMessageDialog(null, "Resultado: "+resta.Resta(k, j));
                    break;
-                
-                   
-                   
-                   
-                   
-                   
-                   
+                case "3":
+                    k=Integer.parseInt(JOptionPane.showInputDialog("Inserte el primero numero que desea multiplicar:"));
+                    j=Integer.parseInt(JOptionPane.showInputDialog("Inserte el Segundo numero que desea multiplicar:"));
+                    
+                    JOptionPane.showMessageDialog(null, "Resultado: "+multiplicar.Multiplicar(k, j));
+                   break;
+                case "4":
+                    k=Integer.parseInt(JOptionPane.showInputDialog("Inserte el primero numero que desea division:"));
+                    j=Integer.parseInt(JOptionPane.showInputDialog("Inserte el Segundo numero que desea division:"));
+                    if(k>=j){
+                        JOptionPane.showMessageDialog(null, "Resultado: "+dividir.Division(k, j));
+                    }else{
+                        JOptionPane.showMessageDialog(null, "El primer numero es mayor al segundo");
+                    }
+                                        
+                   break;  
                    
                 case "5":
                     flag=false;
